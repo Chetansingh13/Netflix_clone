@@ -1,0 +1,714 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  height: 100px;
+  width: 90vw;
+  left: 4%;
+  position: absolute;
+  z-index: 10;
+}
+
+.navbar {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  height: 90px;
+}
+.navimg {
+  height: 40px;
+}
+
+.right-nav select {
+  background-color: black;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.376);
+  border-radius: 4px;
+  padding: 4px 12px 4px 12px;
+  text-align: center;
+  margin-right: 6px;
+  font-size: large;
+}
+
+.right-nav button {
+  background-color: rgb(255, 0, 0);
+  border-radius: 10%;
+  padding: 6px 14px 6px 14px;
+  color: aliceblue;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bg {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.black {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.container :nth-child(1) {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.container :nth-child(2) {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.container :nth-child(3) {
+  font-size: 16px;
+  margin-top: 28px;
+}
+
+.hero {
+  position: relative;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.hero input {
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  padding: 17px 82px 17px 26px;
+  background-color: rgba(0, 0, 0, 0.441);
+  border: 1px solid rgba(255, 255, 255, 0.628);
+  font-size: 17px !important;
+}
+
+.hero > button {
+  margin: 10px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 6%;
+  padding: 14px 16px 14px 16px;
+  color: aliceblue;
+  font-size: medium;
+  cursor: pointer;
+  text-align: center;
+}
+
+.line {
+  border-top: 4px solid red;
+  background-color: rgba(69, 96, 228, 0.539);
+  width: 100%;
+  height: 90px;
+  border-radius: 100% 100% 0 0;
+  position: absolute;
+  bottom: -70px;
+  box-shadow: inset 0px -80px 70px rgb(0, 0, 0);
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  align-content: center;
+}
+
+.cards {
+  display: flex;
+  width: 80vw;
+  height: 300px;
+  position: relative;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  margin: 10px auto;
+  gap: 30px;
+}
+
+.card {
+  height: 247px;
+  position: relative;
+  width: 180px;
+  margin: 12px auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.c1 {
+  margin-left: 20px;
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img.webp);
+}
+
+.c2 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img2.webp);
+}
+
+.c3 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img3.webp);
+}
+
+.c4 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img3.webp);
+}
+
+.c5 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img4.webp);
+}
+
+.c6 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img6.webp);
+}
+
+.c7 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img7.webp);
+}
+
+.c8 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img8.webp);
+}
+
+.c9 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img9.webp);
+}
+
+.c10 {
+  background-image: url(/Skill_27Days/Netflix_project/assets/images/img9.webp);
+}
+
+.rank {
+  color: black;
+  -webkit-text-stroke: 2px white;
+  font-size: 100px;
+  font-weight: 900;
+  align-items: center;
+  position: absolute;
+  margin: 150px 0px 0 -14px;
+}
+
+.heading {
+  margin-top: 30px;
+  margin-left: 150px;
+  height: 20px;
+  width: 80vw;
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.seccard {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 14px auto;
+  height: 300px;
+  width: 80vw;
+  gap: 20px;
+}
+
+.hlo {
+  height: 274px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(140deg, #191e47, #291741);
+}
+
+.head {
+  font-size: 26px;
+  margin: 20px 36px 0px 20px;
+}
+
+.para {
+  margin: 10px 36px 0px 20px;
+  font-size: 18px;
+  color: rgba(240, 248, 255, 0.639);
+  overflow: hidden;
+}
+
+.png {
+  position: absolute;
+  bottom: 16px;
+  right: 14px;
+}
+
+.p1 {
+  height: 56px;
+
+  filter: brightness(0) saturate(100%) invert(21%) sepia(86%) saturate(2780%)
+    hue-rotate(260deg);
+}
+
+.p1 > img {
+  box-shadow: 0 0 80px rgba(255, 192, 203, 0.799);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.p2 {
+  rotate: -2deg;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(86%) saturate(2780%)
+    hue-rotate(260deg);
+}
+
+.p2 > img {
+  box-shadow: 0 0 80px pink;
+  border-radius: 30px;
+}
+
+.p3 {
+  height: 50px;
+  rotate: 1deg;
+  bottom: 32px;
+}
+
+.p4 {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(86%) saturate(2780%)
+    hue-rotate(260deg);
+}
+
+.faq {
+  display: flex;
+  margin: 10px auto;
+  flex-direction: column;
+  height: 600px;
+  width: 80vw;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.381);
+  margin: 4px 0px;
+  padding: 18px;
+  font-size: 26px;
+  color: white;
+  font-weight: normal;
+  justify-content: space-between;
+  transition: 1ms ease-in-out;
+}
+
+.box:hover {
+  background-color: rgba(128, 128, 128, 0.575);
+}
+
+.box > img {
+  filter: invert(1);
+}
+
+.last {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 150px;
+  margin: 36px auto;
+  font-size: large;
+}
+.last > div {
+  color: white;
+  align-items: center;
+}
+
+.text > input {
+  color: white;
+  margin: 16px 0px;
+  padding: 16px 255px 16px 45px;
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: rgba(128, 128, 128, 0.132);
+  border: 1px solid rgba(255, 255, 255, 0.494);
+}
+
+.text > button {
+  margin: 16px 4px;
+  border-radius: 6px;
+  padding: 14px 32px 15px 32px;
+  background-color: red;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+footer > p {
+  color: rgba(255, 255, 255, 0.584);
+  font-size: large;
+}
+
+footer {
+  font-size: medium;
+  height: 40vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer a {
+  text-decoration: none underline;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foot {
+  height: 300px;
+}
+
+.foot > select {
+  background-color: rgba(0, 0, 0, 0.683);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.628);
+  border-radius: 4px;
+  padding: 4px 10px;
+  text-align: center;
+  font-size: large;
+  margin-top: 50px;
+}
+
+.foot > p {
+  margin-top: 45px;
+  color: rgba(255, 255, 255, 0.584);
+}
+
+@media screen and (max-width: 1280px) {
+  .seccard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    height: 442px;
+  }
+  .line {
+    bottom: -250px;
+  }
+  .hlo {
+    height: 200px;
+    width: 50%;
+  }
+  .bg {
+    height: 150vh;
+  }
+
+  .black {
+    height: 150vh;
+  }
+
+  .container {
+    height: 150vh;
+  }
+
+  .container :nth-child(1) {
+    font-size: 50px;
+  }
+
+  .container :nth-child(3) {
+    font-size: 10px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .last {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .seccard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 660px;
+  }
+
+  .hlo {
+    width: 100%;
+    height: 150px;
+  }
+  .heading {
+    margin-top: 30px;
+    margin-left: 80px;
+    height: 20px;
+    width: 80vw;
+    font-size: 24px;
+  }
+  .last {
+    width: 80vw;
+    height: 130px;
+  }
+  .text {
+    flex-direction: column;
+    display: flex;
+    width: 80vw;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text > input {
+    color: white;
+    margin-top: 16px;
+    padding: 6px 128px 6px 20px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+  }
+
+  .text > button {
+    margin-top: 0px;
+    padding: 7px 17px 8px 17px;
+    font-size: 10px;
+  }
+  .container :nth-child(1) {
+    font-size: 40px;
+  }
+
+  .container :nth-child(2) {
+    font-size: 15px;
+  }
+
+  .container :nth-child(3) {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .hero input {
+    padding: 10px 60px 10px 14px;
+    font-size: 14px !important;
+  }
+
+  .hero > button {
+    padding: 12px 14px 12px 14px;
+    font-size: 10px !important;
+  }
+  .last > div {
+    color: white;
+    align-items: center;
+    font-size: 12px;
+  }
+  header {
+    height: 80px;
+    width: 90vw;
+    left: 4%;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+  .navimg {
+    height: 30px;
+  }
+
+  .right-nav select {
+    padding: 4px 10px 4px 10px;
+    font-size: 12px;
+  }
+
+  .right-nav button {
+    padding: 5px 13px 5px 13px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navbar {
+    height: 60px;
+  }
+  .navimg {
+    height: 24px;
+  }
+
+  .right-nav select {
+    padding: 6px 0px 6px 0px;
+    font-size: 12px;
+  }
+
+  .right-nav button {
+    padding: 7px 9px 6px 9px;
+    font-size: 10px;
+  }
+
+  .bg {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .black {
+    height: 90vh;
+  }
+
+  .container {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .container :nth-child(1) {
+    font-size: 30px;
+  }
+
+  .container :nth-child(2) {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgba(240, 248, 255, 0.875);
+  }
+
+  .container :nth-child(3) {
+    font-size: 16px;
+    color: rgba(240, 248, 255, 0.875);
+    text-align: center;
+    margin-top: 10px;
+    width: 80vw;
+  }
+
+  .hero input {
+    padding: 8px 50px 8px 12px;
+    font-size: 14px !important;
+  }
+
+  .hero > button {
+    padding: 8px 11px 8px 11px;
+    font-size: 12px;
+  }
+
+  .line {
+    height: 90px;
+    bottom: -20px;
+  }
+
+  .cards {
+    height: 200px;
+  }
+
+  .card {
+    height: 160px;
+    width: 120px;
+    margin: 12px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rank {
+    font-size: 80px;
+    margin: 82px 0px 0 -13px;
+  }
+  .c1 {
+    margin-left: 40px;
+  }
+
+  .head {
+    font-size: 16px;
+  }
+
+  .para {
+    font-size: 12px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .png {
+    bottom: 16px;
+    right: 14px;
+    height: 30px;
+    margin-bottom: 16px;
+  }
+  .heading {
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 20px;
+    width: 80vw;
+    font-size: 18px;
+  }
+  .box {
+    font-size: 16px;
+    padding: 10px 18px 10px 18px;
+  }
+  .faq {
+    height: 460px;
+  }
+  .footer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .text {
+    flex-direction: column;
+    display: flex;
+    width: 80vw;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text > input {
+    color: white;
+    margin-top: 16px;
+    padding: 4px 40px 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  .text > button {
+    padding: 3px 8px 4px 8px;
+    font-size: 6px;
+  }
+}
