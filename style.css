@@ -434,30 +434,22 @@ footer {
     height: 442px;
   }
   .line {
-    bottom: -250px;
+        bottom: 7vh;
   }
   .hlo {
     height: 200px;
     width: 50%;
   }
   .bg {
-    height: 150vh;
+    height: 88vh;
   }
 
   .black {
-    height: 150vh;
+    height: 88vh;
   }
 
   .container {
-    height: 150vh;
-  }
-
-  .container :nth-child(1) {
-    font-size: 50px;
-  }
-
-  .container :nth-child(3) {
-    font-size: 10px;
+    height: 88vh;
   }
 
   .text {
@@ -470,7 +462,6 @@ footer {
     height: 200px;
   }
 }
-
 @media screen and (max-width: 770px) {
   .seccard {
     display: flex;
